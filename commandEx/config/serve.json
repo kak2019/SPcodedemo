@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://volvogroup.sharepoint.com/sites/coll-powerappstrainingtj/Lists/Work%20States/AllItems.aspx",
+      "customActions": {
+        "951dd85a-97aa-49fc-832d-dbabb1b89f56": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "messagePrefix": "kyrie"
+          }
+        }
+      }
+    },
+    "commandSetDemo": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "951dd85a-97aa-49fc-832d-dbabb1b89f56": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

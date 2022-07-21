@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://volvogroup.sharepoint.com/sites/coll-powerappstrainingtj",
+      
+      "customActions": {
+        "aeefbb5f-cd10-433a-825b-b3232fc5cd29": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "header": "Header area of the page",
+            "footer": "Footer area of the page"
+          }
+        }
+      }
+    },
+    "helloAppCustomizer": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "aeefbb5f-cd10-433a-825b-b3232fc5cd29": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
